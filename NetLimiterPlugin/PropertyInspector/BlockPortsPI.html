@@ -1,0 +1,39 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name=viewport content="width=device-width,initial-scale=1,maximum-scale=1,minimum-scale=1,user-scalable=no,minimal-ui,viewport-fit=cover">
+    <meta name=apple-mobile-web-app-capable content=yes>
+    <meta name=apple-mobile-web-app-status-bar-style content=black>
+    <title>NetLimiterPlugin Settings</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/barraider/streamdeck-easypi@latest/src/sdpi.css">
+    <script src="https://cdn.jsdelivr.net/gh/barraider/streamdeck-easypi@latest/src/sdtools.common.js"></script>
+</head>
+<body>
+    <div class="sdpi-wrapper">
+        <div class="sdpi-item" id="dvName">
+            <div class="sdpi-item-label">Name Rule</div>
+            <input class="sdpi-item-value sdProperty" placeholder="" value="" id="name">
+        </div>
+        <div class="sdpi-item" id="dvAppPath">
+            <div class="sdpi-item-label">App Path</div>
+            <input class="sdpi-item-value sdProperty" placeholder="C:\PATH_TO_APP\App.exe" value="" id="appPath">
+        </div>
+
+        <div class="sdpi-item-group" id="dvPorts">
+            <div class="sdpi-item-label">Port Range</div>
+            <input class="sdpi-item-child sdProperty" placeholder="0-65565" value="0" id="startPort">
+            <input class="sdpi-item-child sdProperty" placeholder="0-65565" value="0" id="endPort">
+        </div>
+        <div class="sdpi-item" id="dvBPS">
+            <div class="sdpi-item-label">Bit Per Second</div>
+            <input class="sdpi-item-value sdProperty" placeholder="0-2^32" value="0" id="bps">
+        </div>
+        <div class="sdpi-item" id="dvSave">
+            <div class="sdpi-item-label">Save Settings</div>
+            <button class="sdpi-item-value max20" onclick="setSettings()">Save</button>
+            <p>Click here to save</p>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,43 @@
+{
+    "Actions": [
+        {
+            "Icon": "Images/icon",
+            "Name": "NetLimiterBlockPorts",
+            "States": [
+                {
+                    "Image": "Images/BlockPortsActionOff",
+                    "TitleAlignment": "middle",
+                    "FontSize": "12"
+                },
+                {
+                    "Image": "Images/BlockPortsActionOn",
+                    "TitleAlignment": "middle",
+                    "FontSize": "12"
+                }
+            ],
+            "SupportedInMultiActions": false,
+            "Tooltip": "NetLimiterApi to Block Ports",
+            "UUID": "com.rodeka.nlplugin.blockports",
+            "PropertyInspectorPath": "PropertyInspector\\BlockPortsPI.html"
+        }
+    ],
+    "Author": "rodeka",
+    "Name": "NLPlugin",
+    "Description": "just a little plugin to blockports or connection via netlimiter api",
+    "Icon": "Images/pluginIcon",
+    "URL": "https://github.com/rodeka1",
+    "Version": "0.7",
+    "CodePath": "com.rodeka.nlplugin",
+    "Category": "NetLimiterPlugin",
+    "CategoryIcon": "Images/categoryIcon",
+    "OS": [
+        {
+            "Platform": "windows",
+            "MinimumVersion": "10"
+        }
+    ],
+    "SDKVersion": 2,
+    "Software": {
+        "MinimumVersion": "6.4"
+    }
+}
